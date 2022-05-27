@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,275 +7,250 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/estilo/estilo.css">
+    <link rel="stylesheet" href="estilos/style.css">
 
-    <!--Roboto, Mono-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
-
-    <!--Sweetalert-->
-    <link rel="stylesheet" href="sweetalert2.min.css">
-
-    <title>Ignacio Cima | CV</title>
-  </head>
-  <body>
-
-      <header>
-        <div class="container-fluid text-white">
-            <div class="row p-5">
-                <div class="col-12 text-center">
-                    <h1>Ignacio Cima</h1>
-                    <p class="lead subtitulo">Estudiante de Tecnicatura Universitaria en Programación UTN</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-        <a class="navbar-brand" href="#">I C</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#perfil">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tecno">Tecnologías</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-
-    <section id="perfil">
-      <div class="container py-3 my-4 bg-info">      
-        <div class="row">
-
-          <!--Modal Datos Personales-->
-          <div class="col-lg-3 col-md-6 col-sm-12 py-3 d-flex justify-content-center">
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
-              Información
-            </button>
-            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title" id="staticBackdropLabel">Información</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body bg-dark text-white">
-                    <ul>
-                      <li>
-                        <p><strong>Fecha de Nacimiento: </strong>12/11/2001</p>
-                      </li>
-                      <li>
-                        <p><strong>Celular: </strong>549 351 2554905</p>
-                      </li>
-                      <li>
-                        <p><strong>E-mail: </strong>ignaciocima2@gmail.com</p>
-                      </li>
-                      <li>
-                        <p><strong>LinkedIn: </strong><a href="linkedin.com/in/ignacio-cima-9205a0200">Ignacio Cima</a></p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer bg-dark text-white">
-                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Modal Perfil-->
-          <div class="col-lg-3 col-md-6 col-sm-12 py-3 d-flex justify-content-center">
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop1">
-              Perfil
-            </button>
-            <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title" id="staticBackdropLabel">Perfil</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body bg-dark text-white">
-                    <ul>
-                      <li>
-                        <p>Trabajo en equipo</p>
-                      </li>
-                      <li>
-                        <p>Comunicación</p>
-                      </li>
-                      <li>
-                        <p>Capacidad para la toma de decisiones</p>
-                      </li>
-                      <li>
-                        <p>Capacidad analítica</p>
-                      </li>
-                      <li>
-                        <p>Orientado a la actualización permanente</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer bg-dark text-white">
-                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Modal Estudios-->
-          <div class="col-lg-3 col-md-6 col-sm-12 py-3 d-flex justify-content-center">
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop2">
-              Estudios
-            </button>
-            <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title" id="staticBackdropLabel">Estudios</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body bg-dark text-white">
-                    <ul>
-                      <li><p>2021 Tecnicatura Universitaria en Programación - UTN FRC</p></li>
-                      <li><p>2022 Intensive Adults Two - British</p></li>
-                      <li><p>Adults One - WorldLink</p></li>
-                      <li><p>2014-2019 Bachiller en Cincias Sociales - Instituto Nuestra Señora</p></li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer bg-dark text-white">
-                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Modal Disponibilidad-->
-          <div class="col-lg-3 col-md-6 col-sm-12 py-3 d-flex justify-content-center">
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop3">
-              Disponibilidad
-            </button>
-            <div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title" id="staticBackdropLabel">Disponibilidad</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body bg-dark text-white">
-                    <ul>
-                      <li><p>Trabajo remoto o presencial</p></li>
-                      <li><p>De 4 a 6 horas</p></li>
-                      <li><p>Movilidad propia</p></li>
-                      <li><p>Notebook propia</p></li>
-                      <li><p>Conectividad a internet</p></li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer bg-dark text-white">
-                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tecno">
-      <div class="container py-5 bg-dark text-white">
-        <h3 class="mb-5 ">Tecnologías</h3>
-        <div class="row justify-content-between">
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/js.png" alt="JS logo">
-            <h5>JavaScript</h5>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/html.png" alt="html logo">
-            <h5>HTML5</h5>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/css-3.png" alt="css logo">
-            <h5>CSS3</h5>
-          </div> 
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/c.png" alt="c# logo">
-            <h5>C# .NET</h5>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/java.png" alt="java logo" style="width: 250px; padding-bottom: 10px;">
-            <h5>Java</h5>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 pb-3 d-flex flex-column align-items-center">
-            <img src="img/sql.png" alt="sql logo">
-            <h5>Base de Datos</h5>
-          </div>
-        </div>
-
-        <div class="row justify-content-around">
-          <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center">
-            <img src="img/GitHub.png" alt="github logo" style="height: 130px;" class="mb-3">
-            <h5>GitHub</h5>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center">
-            <img src="img/GitHub-Desktop-Logo.png" alt="github desktop logo" style="width: 220px;">
-            <h5>GitHub Desktop</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="contacto">
-      <div class="container my-5 text-white">
-        <h3>Contacto</h3>
-        <form class="form-row mx-auto contenedor_form">
-          <div class="form-group col-12">
-            <label for="">Nombre</label>
-            <input type="text" class="form-control" id="txtNombre">
-          </div>
-          <div class="form-group col-12 ">
-            <label for="">Email</label>
-            <input type="email" class="form-control" id="txtEmail">
-          </div>
-          <div class="form-group col-12">
-            <label for="">Motivo</label><br>
-            <textarea name="textarea" id="txtArea" cols="40" rows="5" placeholder="Escriba aquí..." style="resize: none;"></textarea>
-          </div>
-          <div class="form-group col-lg-6 col-sm-12 text-center">
-            <button type="submit" class="btn bg-primary text-white mt-3" onclick="enviarDatos();">Enviar</button>
-          </div>
-          <div class="form-group col-lg-6 col-sm-12 text-center">
-            <button type="reset" class="btn bg-primary text-white mt-3">Cancelar</button>
-          </div>
-        </form>
-      </div>
-    </footer>
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/f2791179fa.js" crossorigin="anonymous"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="sweetalert2.all.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".ocult").hide();
+        
+        $(".c-title1").click(function(){
+            $(".c-text-1").toggle(1000);
+        });
 
-    <script src="/js/script.js"></script>
+        $(".c-title2").click(function(){
+            $(".c-text-2").toggle(1000);
+        });
+
+        $(".ver-mas").click(function(){
+            $(".modal-tecno").show(500);
+        });
+
+        $(".cruz").click(function(){
+            $(".modal-tecno").hide(500);
+        });
+      })
+    </script>
+
+    <title>Ignacio Cima | Portafolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navegador row mx-3">
+        <div class="col-2 d-flex justify-content-center align-items-center horizontal">
+          <a href="#" class="horizontal"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center horizontal">
+          <a href="#tecnologias" class="horizontal"><i class="fa-solid fa-computer"></i></a>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center horizontal">
+          <a href="#estudios" class="horizontal"><i class="fa-solid fa-graduation-cap"></i></a>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center horizontal">
+          <a href="#portafolio" class="horizontal"><i class="fa-solid fa-folder"></i></a>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center horizontal">
+          <a href="#contacto" class="horizontal"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <a href="#" class="vertical"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <a href="#tecnologias" class="vertical"><i class="fa-solid fa-computer"></i></a>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <a href="#estudios" class="vertical"><i class="fa-solid fa-graduation-cap"></i></a>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <a href="#portafolio" class="vertical"><i class="fa-solid fa-folder"></i></a>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <a href="#contacto" class="vertical"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </nav>
+          <header>
+              <div class="container-fluid py-5 my-4">
+                  <div class="container row mx-auto pt-5">
+                      <div class="col-lg-7 col-sm-12 py-4">
+                        <div class="row">
+                          <div class="col-12">
+                            <h1 class="display-3">Ignacio Cima</h1> 
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <h2>Desarrollador Web & .NET Junior </h2> 
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="text-justify p-header">Soy estudiante avanzado de la Tecnicatura Universitaria en Programación dictada por la UTN-FRC, en la cual adquiri los conocimientos necesarios para el desarrollo y mantenimiento de APIs y páginas web.</p> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-sm-12 d-flex justify-content-center div-img">
+                        <img src="/img/foto-perfil.jpeg" alt="foto perfil" class="img-perfil" width="75%">
+                      </div>
+                  </div>
+              </div>
+          </header>
+
+          <section id="tecnologias" class="position-relative">
+            <div class="container-fluid py-5">
+              <div class="container row mx-auto ">
+                <div class="col-12">
+                  <h3 class="">Tecnologías</h3>
+                </div>
+              </div>
+              <div class="container row mx-auto py-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                  <img src="img/html.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center py-sm-5">
+                  <img src="img/css-3.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                  <img src="img/js.png" alt="">
+                </div>
+              </div>
+              <div class="container row mx-auto py-5">
+                <div class="col-12 d-flex justify-content-center">
+                  <button class="btn text-white ver-mas">Ver Más</button>
+                </div>
+              </div>  
+              <div class="container row mx-auto py-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                  <img src="img/c.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center py-sm-5">
+                  <img src="img/java.png" alt="" class="img_java">
+                </div>
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                  <img src="img/sql.png" alt="">
+                </div>
+              </div>
+              </div>
+              <div class="modal-tecno ocult">
+                <button class="cruz btn text-white p-2">X</button>
+                <ul class="p-5 bg-dark text-center">
+                  <li>Bootstrap</li>
+                  <li>Angular y Jquery</li>
+                  <li>.NET Core </li>
+                  <li>Entity Framework Core</li>
+                  <li>Sql Sever y PgAdmin 4</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="estudios">
+            <div class="container-fluid py-5">
+              <div class="container row mx-auto mb-4">
+                <div class="col-12">
+                  <h3 class="">Estudios</h3>
+                </div>
+              </div>
+
+              <div class="container row mx-auto pt-5">
+                <div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center pb-5">
+                  <h4 class="">Universidad - UTN FRC / 2021-2023</h4>
+                  <a href="https://www.frc.utn.edu.ar/secretarias/academica/tecnicaturas/programacion/?pIs=705" target="_blank">Tecnicatura Universitaria en Programación</a>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center pb-5">
+                  <h4 class="">Secundario - I.N.S. / 2014-2019</h4>
+                  <span>Bachiller En Ciencias Sociales</span>
+                </div>
+              </div>
+
+              <div class="container row mx-auto">
+                <div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center pb-5">
+                  <h4 class="">Inglés - British / 2022</h4>
+                  <span>Adult Intensive - 2</span>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center pb-5">
+                  <h4 class="">Inglés - WorldLink / 2021</h4>
+                  <span>Adults - 1</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="portafolio">
+            <div class="container-fluid py-5">
+              <div class="container row mx-auto">
+                <div class="col-12">
+                  <h3 class="py-5">Portafolio</h3>
+                </div>
+              </div>
+              <div class="container row mx-auto">
+                <div class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center pb-sm-5">
+                  <div class="card" style="width: 18rem;">
+                    <div class="div-img">
+                      <img src="img/galo.PNG" class="card-img-top" alt="Foto de página">
+                      <a href="https://galowines.com.ar/" target="_blank"><button class="btn capa">Ir al sitio</button></a> 
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title c-title1">Página Web - Galo Wines</h5>
+                      <p class="card-text c-text-1 ocult">Creación y diseño de la página web para un restaurante utilizando HTML, CSS-Bootstrap & JavaScript-Jquery </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+                  <div class="card" style="width: 18rem;">
+                    <div class="div-img">
+                      <img src="img/galo.PNG" class="card-img-top" alt="Foto de página">
+                      <a href="https://galowines.com.ar/" target="_blank"><button class="btn capa">Ir al sitio</button></a> 
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title c-title2">Página Web - Galo Wines</h5>
+                      <p class="card-text c-text-2 ocult">Creación y diseño de la página para de un restaurante utilizando HTML, CSS-Bootstrap & JavaScript-Jquery </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="capa"></div>
+          </section>
+
+          <section id="contacto">
+            <div class="container-fluid py-5 px-4">
+              <div class="container row mx-auto">
+                <div class="col 12 py-3">
+                  <h3 class="">Contacto</h3>
+                </div>
+              </div>
+              <form id="contacto" action="https://formsubmit.co/ignaciocima2@gmail.com" method="post" class="form-row mx-auto p-4">
+                <div class="form-group col-12">
+                  <label for="">Nombre</label>
+                  <input type="text" name="Nombre" class="form-control" id="txtNombre">
+                </div>
+                <div class="form-group col-12 ">
+                  <label for="">Email</label>
+                  <input type="email" name="Email" class="form-control" id="txtEmail">
+                </div>
+                <div class="form-group col-12">
+                  <label for="">Motivo</label><br>
+                  <textarea name="Motivo" id="txtArea" cols="45" rows="8" class="form-control" placeholder="Escriba aquí..." style="resize: none;"></textarea>
+                </div>
+                <div class="form-group col-lg-6 col-sm-12 text-center">
+                  <button type="submit" class="py-2 px-3 mt-3">Enviar</button>
+                </div>
+                <div class="form-group col-lg-6 col-sm-12 text-center">
+                  <button type="reset" class="py-2 px-3 mt-3">Cancelar</button>
+                </div>
+              </form>
+            </div>  
+    
+          </section>
+
   </body>
 </html>
